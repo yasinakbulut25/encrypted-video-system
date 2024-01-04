@@ -31,7 +31,7 @@ function VideoSystem() {
         const videos = allVideos.filter((video) => video.eduId === eduId);
         setFindVideos(videos);
 
-        const findVideo = allVideos.find((video) => video.link === videoUrl);
+        const findVideo = videos.find((video) => video.link === videoUrl);
         setVideo(findVideo);
         setVideoData(findVideo.url);
       } catch (error) {
